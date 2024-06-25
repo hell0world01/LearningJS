@@ -1,3 +1,21 @@
+:root{
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+  }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient-Btn{
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text:not(:read-only){
+  color: var(--pink);
+}

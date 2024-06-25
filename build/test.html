@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
+    <title>To Do Task 2024</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/test.js">
-</head>
-<body>
-    <h1 class="text-blue-400">
-        Hello world
-    </h1>
-
-    <div class="" data-theme="multi">
-
-    </div>
-    <button class="border-2">
-        Click Me
-    </button>
-</body>
+</head> 
+<body class="bg-dark flex flex-col min-h-screen text-white">
+<header class="w-full px-8 py-4 max-w-[800px] mx-auto">
+    <h1 class="uppercase text-3xl mb-4 text-gray">To Do List 2024</h1>
+    <form id="new-task-form" class="flex">
+        <input class= "p-2 rounded-2xl bg-darker flex-1 mr-4 border-none outline-none " type="text" placeholder="What is you plan for 2024?" id="new-task-input"><br>
+        <button type="submit" class="text-xl font-semibold gradient-Btn hover:opacity-80 active:opacity-50" id="new-task-submit">
+            Add Task
+        </button>
+    </form>
+</header>
+<main class="flex-1 w-full mx-auto max-w-[800px]">
+    <section class="task-list p-4 mb-4">
+        <h2 class="text-2xl text-gray">Tasks</h2>
+        <div id="tasks">
+            <!-- <div class="task flex justify-between bg-darkest p-4 rounded-2xl mb-4">
+                <div class="content my-auto">
+                    <input class="text text-light bg-darkest text-lg block  border-none outline-none" type="text" name="" value="To Do Task" id="" readonly>
+                </div>
+                <div class="actions flex -mx-2">
+                    <button class="edit m-2 font-bold uppercase hover:opacity-80 gradient-Btn">
+                        Edit
+                    </button>
+                    <button class="delete m-2 font-bold uppercase hover:opacity-80 text-red-600">
+                        Delete
+                    </button>
+                </div>
+            </div> -->
+        </div>
+    </section>
+</main>
 <script src="js/test.js">
     
 </script>
+</body>
 </html>

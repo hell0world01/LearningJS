@@ -13,8 +13,13 @@
         color: white;
     }
 </style>
-<body class="">
-    <h1 class="text-violet-400 text-2xl">
+<body class="flex justify-center items-center min-h-screen">
+    <div class="grandparent w-52 h-52 bg-blue-400 flex justify-center items-center">
+        <div class="parent w-32 h-32 bg-green-300 flex justify-center items-center">
+            <div class="child w-16 h-16 bg-stone-900"></div>
+        </div>
+    </div>
+    <!-- <h1 class="text-violet-400 text-2xl">
         Manipulating the DOM
     </h1>
     <ol data-theme="multi">
@@ -22,7 +27,7 @@
     </ol>
     <button onclick= toggleButton() class="border-2 bg-gray-400">
         Click Me
-    </button>
+    </button> -->
 </body>
 <script src="js/main.js">
 </script>
