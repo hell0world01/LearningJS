@@ -46,11 +46,11 @@ window.addEventListener('load', () =>{
 
         task_edit_btn.addEventListener("click", () => {
             if  (task_edit_btn.innerHTML.toLowerCase() == "edit"){
-                input_element.removeAttribute("readonly","readonly");
+                input_element.removeAttribute("readonly");
                 input_element.focus();
                 task_edit_btn.innerHTML = "Save";
             } else{
-                input_element.setAttribute("readonly","readonly");
+                input_element.setAttribute("readonly");
                 task_edit_btn.innerHTML = "Edit";
             }
         });
